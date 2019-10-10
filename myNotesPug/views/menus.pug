@@ -1,0 +1,8 @@
+extend layout
+
+block content
+  ul
+  each menu in menus
+    li
+      - var urlSlug = menu.slug
+      a(href= "/menus/" + urlSlug)= menu.title
